@@ -5,11 +5,12 @@
     box-sizing: border-box;
 }
 
+/* 基本樣式重置 */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: "Arial", sans-serif;
+    transition: margin-left .5s;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -35,40 +36,57 @@ header p {
 }
 
 /* Sidebar 彈跳選單樣式 */
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
+.sidenav {
     height: 100%;
-    width: 200px;
-    background-color: #333;
-    padding-top: 60px; /* 避免與 header 重疊 */
-    transform: translateX(-100%); /* 隱藏選單 */
-    transition: transform 0.3s ease;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-.sidebar:hover {
-    transform: translateX(0); /* 當滑鼠移過時顯示選單 */
-}
-
-.sidebar .menu {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar .menu li {
-    padding: 10px;
-    text-align: center;
-}
-
-.sidebar .menu li a {
-    color: white;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    color: #818181;
     display: block;
+    transition: 0.3s;
 }
 
-.sidebar .menu li a:hover {
-    background-color: #575757;
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 
