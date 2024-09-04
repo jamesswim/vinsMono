@@ -13,10 +13,9 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 60%; /* 更改這個數值來控制寬度 */
     margin: auto;
-    overflow: hidden;
-    padding: 20px;
+    text-align: left; /* 確保文字靠左對齊 */
 }
 
 /* 頁面標題區域 */
@@ -34,6 +33,44 @@ header h1 {
 header p {
     font-size: 1.2em;
 }
+
+/* Sidebar 彈跳選單樣式 */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    padding-top: 60px; /* 避免與 header 重疊 */
+    transform: translateX(-100%); /* 隱藏選單 */
+    transition: transform 0.3s ease;
+}
+
+.sidebar:hover {
+    transform: translateX(0); /* 當滑鼠移過時顯示選單 */
+}
+
+.sidebar .menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar .menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar .menu li a:hover {
+    background-color: #575757;
+}
+
 
 /* GitHub 專案和 YouTube 視頻部分 */
 .projects, .videos {
