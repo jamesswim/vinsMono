@@ -35,6 +35,22 @@ header p {
     font-size: 1.2em;
 }
 
+/* 更新回首頁按鈕樣式 */
+.home-button {
+    position: absolute;
+    bottom: 20px; /* 將按鈕向下移動 */
+    right: 20px;  /* 將按鈕向右移動 */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-button:hover {
+    background-color: #575757;
+}
+
 /* Sidebar 彈跳選單樣式 */
 .sidenav {
     height: 100%;
