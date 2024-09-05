@@ -51,8 +51,8 @@ header p {
     background-color: #575757;
 }
 
-/* 媒體查詢：當視口寬度小於 600px 時（可根據需要調整） */
-@media screen and (max-width: 600px) {
+/* 媒體查詢：當視口寬度小於 1000px 時（可根據需要調整） */
+@media screen and (max-width: 1000px) {
     .home-button {
         position: static; /* 取消絕對定位 */
         display: block;
