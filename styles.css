@@ -37,6 +37,7 @@ header p {
 
 /* 更新回首頁按鈕樣式 */
 .home-button {
+    position: absolute;
     bottom: 20px; /* 將按鈕向下移動 */
     right: 20px;  /* 將按鈕向右移動 */
     background-color: #333;
@@ -48,6 +49,19 @@ header p {
 
 .home-button:hover {
     background-color: #575757;
+}
+
+/* 媒體查詢：當視口寬度小於 600px 時（可根據需要調整） */
+@media screen and (max-width: 600px) {
+    .home-button {
+        position: static; /* 取消絕對定位 */
+        display: block;
+        margin: 10px auto; /* 將按鈕居中 */
+    }
+
+    .container {
+        text-align: center; /* 使文本居中對齊 */
+    }
 }
 
 /* Sidebar 彈跳選單樣式 */
