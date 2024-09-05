@@ -37,10 +37,10 @@ header p {
 
 /* 更新回首頁按鈕樣式 */
 .home-button {
-    position: absolute;
+    position: fixed; 
     bottom: 10px; /* 將按鈕向下移動 */
     right: 10px;  /* 將按鈕向右移動 */
-    margin-left: 10px;
+    margin: 20px 10px;
     background-color: #333;
     color: white;
     padding: 10px 20px;
