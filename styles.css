@@ -85,11 +85,13 @@ header p {
 
 .sidenav ul li {
     list-style-type: none;
+    margin-bottom: 10px; /* 增加上下間距，讓它們顯得更整齊 */
 }
 
 .sidenav ul li a {
     color: #818181;
     text-decoration: none;
+    font-size: 14px; /* 調整字體大小 */
     display: block;
     padding: 8px 0;
 }
@@ -170,6 +172,11 @@ li h3 {
 li p {
     font-size: 1em;
     color: #666;
+}
+
+/* 調整滾動邊距，確保滾動到的元素不會被頁面頂部遮擋 */
+#video1, #video2, #video3 {
+    scroll-margin-top: 100px; /* 調整這個數值來確保滾動到的元素顯示在螢幕頂部 */
 }
 
 /* 頁面底部 */
