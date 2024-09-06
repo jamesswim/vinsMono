@@ -179,6 +179,13 @@ li p {
     scroll-margin-top: 100px; /* 調整這個數值來確保滾動到的元素顯示在螢幕頂部 */
 }
 
+#youtubeSubmenu {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+    transition: max-height 0.3s ease-out;
+}
+
 /* 頁面底部 */
 footer {
     background-color: #333;
