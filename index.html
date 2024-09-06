@@ -12,7 +12,11 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#github-projects">GitHub 專案</a>
         <a href="#youtube-videos">YouTube 影片</a>
-        <!-- 添加更多選項 -->
+        <ul>
+            <li><a href="#video1">EuRoC Dataset中的MH01序列上測試</a></li>
+            <li><a href="#video2">AR範例</a></li>
+            <li><a href="#video3">EuRoC Dataset中的MH01序列上測試並加上儲存</a></li>
+        </ul>
     </div>
 
     <!-- 打開側邊欄的按鈕 -->
@@ -44,19 +48,19 @@
             <!-- YouTube 影片內容 -->
             <h2>YouTube 影片</h2>
             <ul>
-                <li>
+                <li id="video1">
                     <h3><a href="https://youtu.be/zopmGK29Mh0" target="_blank">EuRoC Dataset中的MH01序列上測試</a></h3>
                     <p>使用VINS-Mono來在EuRoC Dataset中的MH01序列上測試，並且有ground-truth來查看與實際軌跡的差異</p>
                 </li>
                 <li>
                     <h3><a href="https://youtu.be/aK0BD6cMvMg" target="_blank">AR範例</a></h3>
                     <p>使用VINS-Mono來跑AR範例，資料集是來自HKUST Robotic Institute</p>
-                </li>
+                </li id="video2">
                 <li>
                     <h3><a href="https://youtu.be/YM8dU9DQ0H8" target="_blank">EuRoC Dataset中的MH01序列上測試並加上儲存</a></h3>
                     <p>使用VINS-Mono來在EuRoC Dataset中的MH01序列上測試，而在影片最後有加上儲存軌跡</p>
                 </li>
-                <li>
+                <li id="video3">
                     <h3><a href="https://youtu.be/B389y8s2YrI" target="_blank">MH01序列上繼續直接跑MH02序列</a></h3>
                     <p>使用VINS-Mono來在原本跑完的MH01軌跡上繼續，接續著跑EuRoC Dataset中的MH02序列</p>
                 </li>
