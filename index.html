@@ -11,8 +11,8 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#github-projects">GitHub 專案</a>
-        <a href="#youtube-videos">YouTube 影片</a>
-        <ul>
+        <a href="javascript:void(0)" onclick="toggleYoutube()">YouTube 影片</a>
+        <ul id="youtubeSubmenu" style="display: none;">
             <li><a href="#video1">EuRoC Dataset中的MH01序列上測試</a></li>
             <li><a href="#video2">AR範例</a></li>
             <li><a href="#video3">EuRoC Dataset中的MH01序列上測試並加上儲存</a></li>
@@ -46,8 +46,8 @@
 
         <section id="youtube-videos" class="videos">
             <!-- YouTube 影片內容 -->
-            <a href="javascript:void(0)" onclick="toggleYoutube()">YouTube 影片</a>
-            <ul id="youtubeSubmenu" style="display: none;">
+            <h2>YouTube 影片</h2>
+            <ul>
                 <li id="video1">
                     <h3><a href="https://youtu.be/zopmGK29Mh0" target="_blank">EuRoC Dataset中的MH01序列上測試</a></h3>
                     <p>使用VINS-Mono來在EuRoC Dataset中的MH01序列上測試，並且有ground-truth來查看與實際軌跡的差異</p>
